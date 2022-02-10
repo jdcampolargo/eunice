@@ -14,13 +14,23 @@ def index():
         response = openai.Completion.create(
             engine="text-davinci-001",
             prompt=generate_prompt(animal),
-            temperature=0.6,
+            temperature=0.3,
         )
         return redirect(url_for("index", result=response.choices[0].text))
 
     result = request.args.get("result")
     return render_template("index.html", result=result)
 
+    # response = openai.Completion.create(
+        # engine="text-davinci-001",
+        # prompt="ML Tutor: I am a ML/AI language model tutor\nYou: What is a language model?\nML Tutor: A language model is a statistical model that describes the probability of a word given the previous words.\nYou: What is a statistical model?",
+        # temperature=0.3,
+        # max_tokens=60,
+        # top_p=1.0,
+        # frequency_penalty=0.5,
+        # presence_penalty=0.0,
+        # stop=["You:"]
+    # )
 
 def generate_prompt(animal):
     return """Suggest three names for an animal that is a superhero.

@@ -1,0 +1,30 @@
+[
+    {
+        "prompt": "AVL Visualization Tool",
+        "completion": "The University of San Francisco has a cool pretty visualization tool to build AVL trees and visualize how various rotations work: https://www.cs.usfca.edu/~galles/visualization/AVLtree.html \n As we're learning about AVL trees in lecture and lab this week, it might be useful to visualize AVL trees to strengthen understanding on AVL concepts, so check it out!"
+    },
+    {
+        "prompt": "Reading File from CSV",
+        "completion": "This might help. https://www.geeksforgeeks.org/csv-file-management-using-c/"
+    },
+    {
+        "prompt": "DFS and BFS good notes",
+        "completion": "'Good notes' are usually those most understandable for most people, but it really varies from person to person. I personally think the information on the MP pages are useful. Also, I find the follow ups in this link helpful. Feel free to google for more info. https://stackoverflow.com/questions/3332947/when-is-it-practical-to-use-depth-first-search-dfs-vs-breadth-first-search-bf"
+    },
+    {
+        "prompt": "can anyone give me some hints on the iterator ++ operator",
+        "completion": "Think about what you do in each step. You pull an item of the data structure and process it. The difference between DFS and BFS is in the data structure that is maintaining the elements to work on. So you need to write ++ to work that way using data stored in your iterator."
+    },
+    {
+        "prompt": "whats a cut edge?",
+        "completion": "an edge where if you cut it the graph is no longer connected"
+    },
+    {
+        "prompt": "why cant we do c.thickfrosting_ = true?",
+        "completion": "its private so you can't explicitly declare it"
+    },
+    {
+        "prompt": "Why is removing the end of a doubly-linked list with a head and tail pointer not O(1)",
+        "completion": "removing the end of a doubly-linked list w/ a head and tail pointer **is** O(1) runtime"
+    }
+  ]

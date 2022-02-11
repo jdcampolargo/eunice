@@ -25,6 +25,16 @@ def index():
     result = request.args.get("result")
     return render_template("index.html", result=result)
 
+    # response = openai.Completion.create(
+        # engine="text-davinci-001",
+        # prompt="ML Tutor: I am a ML/AI language model tutor\nYou: What is a language model?\nML Tutor: A language model is a statistical model that describes the probability of a word given the previous words.\nYou: What is a statistical model?",
+        # temperature=0.3,
+        # max_tokens=60,
+        # top_p=1.0,
+        # frequency_penalty=0.5,
+        # presence_penalty=0.0,
+        # stop=["You:"]
+    # )
 
 def generate_prompt(animal):
     return """Answer the CS 225 Data Structures and Algorithms question:

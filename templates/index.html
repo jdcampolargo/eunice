@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <title>OpenAI Quickstart</title>
+  <title>Eunice for CS 225</title>
   <link
     rel="shortcut icon"
     href="{{ url_for('static', filename='logo.png') }}"
@@ -10,12 +10,16 @@
 
 <body>
   <img src="{{ url_for('static', filename='logo.png') }}" class="icon" />
-  <h3>Name my pet</h3>
+  <h3>Your Personal Assistant for CS 225</h3>
   <form action="/" method="post">
-    <input type="text" name="animal" placeholder="Enter an animal" required />
-    <input type="submit" value="Generate names" />
+    <input type="text" name="animal" placeholder="Type your question" required />
+    <input type="submit" value="Ask your question" />
+      <!-- <A href="https://www.juandavidcampolargo.com/" target="_blank" rel="noopener noreferrer" >chat Information</a>.</p> -->
+
+
   </form>
   {% if result %}
   <div class="result">{{ result }}</div>
   {% endif %}
 </body>
+

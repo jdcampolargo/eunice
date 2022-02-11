@@ -15,6 +15,10 @@ def index():
             engine="text-davinci-001",
             prompt=generate_prompt(animal),
             temperature=0.6,
+            ##max_tokens=64,
+            #top_p=1,
+            frequency_penalty=0,
+            presence_penalty=0
         )
         return redirect(url_for("index", result=response.choices[0].text))
 
@@ -23,13 +27,15 @@ def index():
 
 
 def generate_prompt(animal):
-    return """Suggest three names for an animal that is a superhero.
+    return """Answer the CS 225 Data Structures and Algorithms question:
 
-Animal: Cat
-Names: Captain Sharpclaw, Agent Fluffball, The Incredible Feline
-Animal: Dog
-Names: Ruff the Protector, Wonder Canine, Sir Barks-a-Lot
-Animal: {}
-Names:""".format(
+Question: What is BFS?
+Answer: A graph traversal algorithm that uses a queue to visit each node in the graph.
+Question: I'm getting a seg fault. What should I do?
+Answer: Make sure you have the correct version of the CS225 library.
+Question: I thought operator= is a must when implementing iterators. If not how can you assign one iterator to another when iterating? say for(list<int>::iterator it = mylist.begin(); it != mylist.end(), it++)
+Answer: It is not. I should have pulled the iterator stuff from the practice exam. What is required of an iterator is operator++(), operator*, and operator!=.
+Question: {}
+Answer:""".format(
         animal.capitalize()
     )

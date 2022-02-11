@@ -63,7 +63,6 @@ input[type="submit"] {
 .result {
   font-weight: bold;
   margin-top: 40px;
-  
   outline: none;
   /* user-select: text;  */
   white-space: pre-wrap; 

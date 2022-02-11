@@ -15,8 +15,8 @@ def index():
             engine="text-davinci-001",
             prompt=generate_prompt(animal),
             temperature=0.6,
-            ##max_tokens=64,
-            #top_p=1,
+            max_tokens=64,
+            top_p=1,
             frequency_penalty=0,
             presence_penalty=0
         )
@@ -37,7 +37,7 @@ def index():
     # )
 
 def generate_prompt(animal):
-    return """Answer the CS 225 Data Structures and Algorithms question:
+    return """Answer the CS 225 Data Structures and Algorithms at the University of Illinos question:
 
 Question: What is BFS?
 Answer: A graph traversal algorithm that uses a queue to visit each node in the graph.

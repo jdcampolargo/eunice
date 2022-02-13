@@ -10,7 +10,7 @@
 
 <body>
   <img src="{{ url_for('static', filename='logo.png') }}" class="icon" />
-  <h3>Your Personal Assistant for CS 225</h3>
+  <h3>Your Personal Writing Assistant</h3>
   <form action="/" method="post">
     <input type="text" name="animal" placeholder="Type your question" required />
     <input type="submit" value="Ask your question" />
@@ -20,7 +20,7 @@
   </form>
   {% if result %}
   <!-- <div class="result">{{ result }}</div> -->
-  <div class="result"><pre>{{result}}</pre></div>
+  <div class="result">{{result}}</div>
   {% endif %}
 </body>
 

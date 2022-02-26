@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <title>Eunice for CS 225</title>
+  <title>Your Personal Writing Assistant</title>
   <link
     rel="shortcut icon"
     href="{{ url_for('static', filename='logo.png') }}"
@@ -11,10 +11,16 @@
 <body>
   <img src="{{ url_for('static', filename='logo.png') }}" class="icon" />
   <h3>Your Personal Writing Assistant</h3>
+    <h4>The End of BS Writing Assignments</h4>
   <form action="/" method="post">
-    <input type="text" name="animal" placeholder="Type your question" required />
-    <input type="submit" value="Ask your question" />
-      <!-- <A href="https://www.juandavidcampolargo.com/" target="_blank" rel="noopener noreferrer" >chat Information</a>.</p> -->
+    <input type="text" name="animal" placeholder="Write your prompt" required />
+    <input type="submit" value="Start" />
+    
+    <!-- create a button that shows when I submit and calls the same method -->
+    
+    
+
+
 
 
   </form>

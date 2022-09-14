@@ -23,6 +23,7 @@ It is cool project but perhaps not the right problem. Perhaps with some small fu
 ## Built with
 * Python
 * JavaScript
+* Flask
 
 ## Contact 
 

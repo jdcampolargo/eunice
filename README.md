@@ -25,6 +25,9 @@ It is cool project but perhaps not the right problem. Perhaps with some small fu
 * JavaScript
 * Flask
 
+## Why Eunice?
+Eunice was the name of my TA and technically who I was trying to, partly, replace.
+
 ## Contact 
 
 Juan David Campolargo
